@@ -3,7 +3,7 @@
 // const calculator = require('./script');
 // const caesarCipher = require('./script');
 // const analyzeArray = require('./script');
-import { capitalize, reverseString } from "./script";
+import { capitalize, reverseString, calculator } from "./script";
 
 // capitalize()
 test('Capitalized', () => {
@@ -19,22 +19,22 @@ test('Reverse the string', () => {
     expect(reverseString('data')).toBe('atad');
 })
 
-// // calculator object
-// test('Addition works', () => {
-//     expect(calculator.add(2,1)).toBe(3);
-// })
+// calculator object
+test('Addition works', () => {
+    expect(calculator.add(2,1)).toBe(3);
+})
 
-// test('Subtraction works', () => {
-//     expect(calculator.subtract(2,1)).toBe(1);
-// })
+test('Subtraction works', () => {
+    expect(calculator.subtract(2,1)).toBe(1);
+})
 
-// test('Division works', () => {
-//     expect(calculator.divide(6,3)).toEqual(2);
-// })
+test('Division works', () => {
+    expect(calculator.divide(6,3)).toBeCloseTo(2);
+})
 
-// test('Multiplication works as well!', () => {
-//     expect(calculator.multipply(3,2)).toEqual(6);
-// })
+test('Multiplication works as well!', () => {
+    expect(calculator.multiply(3,2)).toEqual(6);
+})
 
 // // caesarCipher()
 // test('Works with normal words', () => {
