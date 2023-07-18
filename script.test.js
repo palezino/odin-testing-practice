@@ -1,9 +1,4 @@
-// const capitalize = require('./script');
-// const reverseString = require('./script');
-// const calculator = require('./script');
-// const caesarCipher = require('./script');
-// const analyzeArray = require('./script');
-import { capitalize, reverseString, calculator } from "./script";
+import { capitalize, reverseString, calculator, caesarCipher, analyzeArray } from "./script";
 
 // capitalize()
 test('Capitalized', () => {
@@ -36,24 +31,24 @@ test('Multiplication works as well!', () => {
     expect(calculator.multiply(3,2)).toEqual(6);
 })
 
-// // caesarCipher()
-// test('Works with normal words', () => {
-//     expect(caesarCipher('attack', 1)).toBe('buubdl');
-// })
+// caesarCipher()
+test('Works with normal words', () => {
+    expect(caesarCipher('attack', 1)).toBe('buubdl');
+})
 
-// test('Shifts from z to a', () => {
-//     expect(caesarCipher('zebras', 1)).toBe('afcsbt');
-// })
+test('Shifts from z to a', () => {
+    expect(caesarCipher('zebras', 1)).toBe('afcsbt');
+})
 
-// test('Keeps the same case', () => {
-//     expect(caesarCipher('Titus', 3)).toBe('Wlwxv')
-// })
+test('Keeps the same case', () => {
+    expect(caesarCipher('Titus', 3)).toBe('Wlwxv')
+})
 
-// test('Keeps the punctuation', () => {
-//     expect(caesarCipher('Did I lock the gate?', 1)).toBe('Dje J mpdl uif hbuf?');
-// })
+test('Keeps the punctuation', () => {
+    expect(caesarCipher('Did I lock the gate?', 1)).toBe('Eje J mpdl uif hbuf?');
+})
 
-// // analyzeArray()
-// test('Returns an object with properties', () => {
-//     expect(analyzeArray([1,8,3,4,2,6])).toEqual({ average: 4, min: 1, max: 8, length: 6 });
-// })
+// analyzeArray()
+test('Returns an object with properties', () => {
+    expect(analyzeArray([1,8,3,4,2,6])).toEqual({ average: 4, min: 1, max: 8, length: 6 });
+})
